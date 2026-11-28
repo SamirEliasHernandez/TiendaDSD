@@ -132,7 +132,7 @@ require_once "buscar.php";
                                         <form action="eliminar.php" method="POST"
                                               onsubmit="return confirm('¿Desea eliminar este producto?');">
 
-                                            <input type="hidden" name="id"
+                                            <input type="hidden" name="id_producto"
                                                    value="<?php echo $fila["id_producto"]; ?>">
 
                                             <button type="submit" class="btn btn-danger btn-sm">
