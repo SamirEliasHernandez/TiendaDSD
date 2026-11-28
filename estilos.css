@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f1f5f9;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Encabezado */
+
+.encabezado {
+    background-color: #172b4d;
+    color: white;
+    padding: 25px 6%;
+    border-bottom: 4px solid #2563eb;
+}
+
+.encabezado h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.encabezado p {
+    color: #cbd5e1;
+    margin: 5px 0 0;
+}
+
+/* Contenido principal */
+
+.contenedor {
+    width: 90%;
+    max-width: 1400px;
+    margin: 40px auto;
+}
+
+.presentacion {
+    margin-bottom: 30px;
+}
+
+.presentacion h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.presentacion p {
+    color: #64748b;
+}
+
+/* Panel de productos */
+
+.panel {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Barra superior */
+
+.barra-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.barra-superior h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Buscador */
+
+.buscador {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.buscador input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+.buscador input:focus {
+    border-color: #2563eb;
+}
+
+/* Tabla de productos */
+
+.table {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.table thead th {
+    background-color: #172b4d;
+    color: white;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* Botones */
+
+.btn {
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.acciones {
+    white-space: nowrap;
+}
+
+.acciones form {
+    display: inline-block;
+}
+
+/* Mensajes */
+
+.table td.mensaje {
+    padding: 40px;
+    color: #64748b;
+    text-align: center;
+}
+
+/* Pie de pagina */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Diseño adaptable */
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .panel {
+        padding: 15px;
+    }
+
+    .buscador {
+        flex-direction: column;
+    }
+
+    .presentacion h2 {
+        font-size: 24px;
+    }
+}
